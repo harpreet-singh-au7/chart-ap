@@ -23,6 +23,7 @@ This app uses [Chart JS](https://www.chartjs.org/) and  https://apexcharts.com/ 
 
 `stacked-bar` - Chart JS Stacked Bar example chart
 
+Each components data file resides the component itself like `apex-chart-data.ts`
 
 
 
