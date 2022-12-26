@@ -2,9 +2,11 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.8.
 
-## Development server
+clone this app :  git clone https://github.com/jayaseelananbu/chart-app.git
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Run npm install
+
+Run ng serve  --open for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 `Firebase hosted URL` : https://chart-app-4c0cc.firebaseapp.com/
 
