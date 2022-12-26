@@ -7,6 +7,7 @@ import { ApexStackedComponent } from './apex-stacked/apex-stacked.component';
 
 
 const routes: Routes = [
+  { path: '', redirectTo: '/barchart', pathMatch: 'full' },
   { path: 'barchart', component: BarChartComponent },
   { path: 'stackedbar', component: StackedBarComponent },
   { path: 'apexchart', component: ApexChartComponent },
