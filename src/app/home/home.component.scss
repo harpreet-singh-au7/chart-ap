@@ -6,6 +6,10 @@ li {
     line-height: 1.5em;
 }
 
+.list-item{
+  max-width: 13em;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -18,6 +22,7 @@ ul {
   li {
     float: left;
   }
+
   
   li a {
     display: block;
@@ -30,3 +35,28 @@ ul {
   li a:hover {
     background-color: #111111;
   }
+  .container-box {
+    display: flex;
+    justify-content: space-around;  
+}
+  .container-box > div {
+    width: 34em; /* Declare your value. Can be in relative units. */
+    height: 20em;
+    display: inline-block;
+    vertical-align: top;
+    border: 1px black solid;
+  
+    /* IE fix. */
+    *display: inline;
+    zoom: 1;
+  }
+
+  .outer{
+    display: inline-table !important;
+  }
+  .act-home{
+    display: flex;
+    position: absolute;
+    justify-content: space-around;
+  }
+

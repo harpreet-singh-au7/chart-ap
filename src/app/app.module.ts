@@ -10,10 +10,21 @@ import { NgApexchartsModule } from 'ng-apexcharts';
 import { ApexChartComponent } from './apex-chart/apex-chart.component';
 import { ApexStackedComponent } from './apex-stacked/apex-stacked.component';
 import { HomeComponent } from './home/home.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MaterialExampleModule} from './material.module';
+import {SidenavComponent} from './sidebar/sidenav.component';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {MatNativeDateModule} from '@angular/material/core';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
-  declarations: [AppComponent, BarChartComponent, StackedBarComponent, ApexChartComponent, ApexStackedComponent, HomeComponent],
-  imports: [BrowserModule, AppRoutingModule, NgApexchartsModule],
+  declarations: [AppComponent, BarChartComponent, StackedBarComponent, ApexChartComponent, ApexStackedComponent, HomeComponent, SidenavComponent],
+  imports: [BrowserModule, AppRoutingModule, NgApexchartsModule, BrowserAnimationsModule, BrowserModule,
+    FormsModule,
+    MaterialExampleModule,
+    HttpClientModule,
+    MatNativeDateModule,
+    ReactiveFormsModule,],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

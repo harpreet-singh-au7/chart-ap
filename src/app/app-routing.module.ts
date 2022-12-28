@@ -4,10 +4,11 @@ import { BarChartComponent } from './bar-chart/bar-chart.component';
 import { StackedBarComponent } from './stacked-bar/stacked-bar.component';
 import { ApexChartComponent } from './apex-chart/apex-chart.component';
 import { ApexStackedComponent } from './apex-stacked/apex-stacked.component';
+import { HomeComponent } from './home/home.component';
 
 
 const routes: Routes = [
-  { path: '', redirectTo: '/barchart', pathMatch: 'full' },
+  { path: '', component: HomeComponent},
   { path: 'barchart', component: BarChartComponent },
   { path: 'stackedbar', component: StackedBarComponent },
   { path: 'apexchart', component: ApexChartComponent },

@@ -1,0 +1,19 @@
+.container-box {
+  display: flex;
+  justify-content: space-around;  
+}
+.container-box > div {
+  width: 34em; /* Declare your value. Can be in relative units. */
+  height: 20em;
+  display: inline-block;
+  vertical-align: top;
+  border: 1px black solid;
+
+  /* IE fix. */
+  *display: inline;
+  zoom: 1;
+}
+
+.outer{
+  display: inline-table !important;
+}
