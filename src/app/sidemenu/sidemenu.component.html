@@ -1,0 +1,23 @@
+
+  <mat-sidenav-container class="example-container">
+    <mat-sidenav #sidenav mode="side"  [(opened)]="opened"
+    (openedStart)='showNavLabels = !showNavLabels'
+    (closedStart)='showNavLabels = !showNavLabels' class="example-sidenav">
+    <mat-nav-list>
+
+    <a mat-list-item [ngStyle]="{'background-color': selectedItem === 'item1' ? 'lightgreen' : 'whitesmoke'}" (click)="selectedItem = 'item1'"  routerLink="./"><mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>Dashboard</a>
+    <a mat-list-item [matMenuTriggerFor]="subMenu" class="dropdown-toggle" [ngStyle]="{'background-color': selectedItem === 'item2' ? 'lightgreen' : 'whitesmoke'}" (click)="selectedItem = 'item2'"   routerLink="./"><mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="graphic_eq"></mat-icon>Insights</a>
+    <mat-menu class="dropdown-menu" #subMenu="matMenu">
+      <button mat-menu-item [routerLink]="'/barchart'">Sample chart - Chart JS</button>
+      <button mat-menu-item [routerLink]="'/stackedbar'">Stacked Bar - Chart JS</button>
+      <button mat-menu-item [routerLink]="'/apexchart'">Sample chart - ApexChart</button>
+      <button mat-menu-item [routerLink]="'/apexstacked'">Stacked Bar - ApexChart</button>
+    </mat-menu>
+    <a mat-list-item  [ngStyle]="{'background-color': selectedItem === 'item3' ? 'lightgreen' : 'whitesmoke'}" (click)="selectedItem = 'item3'"  routerLink="./"><mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="list"></mat-icon>Capital Account</a>
+    <a mat-list-item  [ngStyle]="{'background-color': selectedItem === 'item4' ? 'lightgreen' : 'whitesmoke'}" (click)="selectedItem = 'item4'"  routerLink="./"><mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="file_copy"></mat-icon>Reports</a>
+    <a mat-list-item [ngStyle]="{'background-color': selectedItem === 'item5' ? 'lightgreen' : 'whitesmoke'}" (click)="selectedItem = 'item5'"  routerLink="./"><mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="description"></mat-icon>Documents</a>
+  </mat-nav-list>
+    </mat-sidenav>  
+  </mat-sidenav-container>
+
+

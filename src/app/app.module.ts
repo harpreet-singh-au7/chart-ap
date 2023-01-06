@@ -16,9 +16,11 @@ import {SidenavComponent} from './sidebar/sidenav.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatNativeDateModule} from '@angular/material/core';
 import {HttpClientModule} from '@angular/common/http';
+import { SideMenuComponent } from './sidemenu/sidemenu.component';
+import { TvpiComponent } from './tvpi/tvpi.component';
 
 @NgModule({
-  declarations: [AppComponent, BarChartComponent, StackedBarComponent, ApexChartComponent, ApexStackedComponent, HomeComponent, SidenavComponent],
+  declarations: [AppComponent, BarChartComponent, StackedBarComponent, ApexChartComponent, ApexStackedComponent, HomeComponent, SidenavComponent, SideMenuComponent, TvpiComponent],
   imports: [BrowserModule, AppRoutingModule, NgApexchartsModule, BrowserAnimationsModule, BrowserModule,
     FormsModule,
     MaterialExampleModule,
